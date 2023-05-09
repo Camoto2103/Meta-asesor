@@ -1,8 +1,15 @@
+import { Formik } from 'formik';
 import './App.css';
+import FormMetaAsesor from './components/FormularioMetaAsesor'
 
 function App() {
   return (
-    <div className="App">
+    <div className="body">
+      <div>
+      <FormMetaAsesor>
+
+      </FormMetaAsesor>
+      </div>
       
     </div>
   );
