@@ -1,20 +1,17 @@
-import { Formik } from 'formik';
-import './App.css';
-import FormMetaAsesor from './components/FormularioMetaAsesor'
+import "./App.css";
+import FormMetaAsesor from "./components/FormularioMetaAsesor";
 
 function App() {
   return (
     <div className="body">
       <div>
-        <FormMetaAsesor
-          
-          
-          />
 
+        <FormMetaAsesor antiguedad=">60" />
+        
 
-  
+        <FormMetaAsesor antiguedad="<=60" />
+
       </div>
-      
     </div>
   );
 }

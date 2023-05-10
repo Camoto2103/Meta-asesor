@@ -1,0 +1,85 @@
+:root {
+    --midBlue: #002b8c; 
+
+    --darkgrey: #7d7d7d;
+
+    --textBlue: #001950;
+
+    --white: #fff;
+
+    --lightGrey: #f7f7f7;
+
+    --lightBlue: #00c8fa;
+}
+
+@font-face {
+    font-family: RobotoRegular;
+    src: url(../fonts/ROBOTO/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: CronosBold;
+    src: url(../fonts/CRONOS/CronosPro-Bold.otf);
+}
+
+.formulario{
+    background: var(--lightGrey);
+    width: 80%;
+    margin: 20px;
+    
+}
+
+.formulario h1{
+    padding: 5px 0px 0px 40px;
+    font-family: CronosBold;
+    color: var(--textBlue);
+    
+   
+}
+.container {
+    display:grid;
+    padding: 10px;
+}
+
+.metas{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-left: 20%;
+}
+
+.form-Group{
+    margin: 10px;
+    display: grid;
+}
+
+.input {
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid rgb(52, 52, 52);
+    appearance: text;
+}
+
+.input-fecha {
+    margin-right: 40px;
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid rgb(52, 52, 52);
+    text-align: center;
+    font-size: large;
+    appearance: text;
+    content: 'YYYY-MM';
+}
+
+.tittle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.label {
+    font-family: CronosBold;
+    color: var(--midBlue);
+    margin-left: 20px;
+}
