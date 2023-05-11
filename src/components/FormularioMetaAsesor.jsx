@@ -1,15 +1,40 @@
 import { Formik, Form, Field } from "formik";
 import React from "react";
-import Button from "../pure/Button";
+import { useState } from 'react';
 import "./FormularioMetaAsesor.css";
+import Button from "../pure/Button";
 
-const FormMetaAsesor = ({ antiguedad }) => {
+const FormMetaAsesor = () => {
+  const [antiguedad, setAntiguedad] = useState(null);
+  const date = new Date();
+  const month = date.getMonth() + 1
+  var fullMonth = ''
+  month > 0 && month <= 9 ? fullMonth = '0' + month : fullMonth = month
+  const periodos = date.getFullYear() + '-' + fullMonth
+  const mayores = '>60'
+  const menores = '<=60'
+  function handleChange(event) {
+    setAntiguedad(event.target.value);
+  }
+
+
+
   return (
     <div>
+      <div className="form-select">
+        <label className="label">Selecciona la Antiguedad: </label>
+        <select className="input" onChange={handleChange}>
+          <option></option>
+          <option value={mayores}>{mayores}</option>
+          <option value={menores}>{menores}</option>
+        </select>
+      </div>
+     
+      
       <Formik
         initialValues={{
           antiguedad: antiguedad,
-          periodo: "",
+          periodo: periodos,
           meta_bit: "",
           meta_bit_s1: "",
           meta_bit_s2: "",
@@ -23,8 +48,14 @@ const FormMetaAsesor = ({ antiguedad }) => {
           meta_dia_s4: "",
           meta_dia_s5: "",
         }}
+
+
         validate={(values) => {
           const errors = {};
+          if (!values.antiguedad) {
+            errors.antiguedad = "Antiguedad is required";
+          }
+
           if (!values.periodo) {
             errors.periodo = "Periodo is required";
           }
@@ -70,10 +101,10 @@ const FormMetaAsesor = ({ antiguedad }) => {
       >
         <Form className="formulario">
             <div className="tittle">
-                <h1>Antiguedad : {antiguedad}</h1>
+                <h1>Antiguedad : {antiguedad || "---"}</h1>
                     <div className="form-Group">
                     <label className="label">Periodo:</label>
-                    <Field className="input-fecha" type="date" name="" pattern="\d{4}-\d{2}" />
+                    <Field className="input-fecha" type="text" name="periodo" disabled/>
                 </div>
             </div>
             
@@ -128,9 +159,11 @@ const FormMetaAsesor = ({ antiguedad }) => {
                 <div className="form-Group">
                     <label className="label">meta_dia_s5:</label>
                     <Field className="input" type="number" name="" />
-                </div>
-            </div> 
+                </div>   
+            </div>
+            <Button>Enviar</Button>
           </div>
+          
         </Form>
       </Formik>
     </div>

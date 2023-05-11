@@ -3,11 +3,11 @@ import React from 'react'
 const style = {
     'button':{
         fontFamily:'RobotoRegular',
-        margin:'15px 0px 15px 0px',
-        width:'120px',
+        margin:'20px 0px 20px 25px',
+        width:'200px',
         height:'30px',
         border:'none',
-        borderRadius:'15px',
+        borderRadius:'5px',
         backgroundColor:'#001950',
         color:'#fff',
         fontSize:'16px',

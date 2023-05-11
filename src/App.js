@@ -2,14 +2,13 @@ import "./App.css";
 import FormMetaAsesor from "./components/FormularioMetaAsesor";
 
 function App() {
+  const antiguedad = "";
+
   return (
     <div className="body">
       <div>
 
-        <FormMetaAsesor antiguedad=">60" />
-        
-
-        <FormMetaAsesor antiguedad="<=60" />
+        <FormMetaAsesor/>
 
       </div>
     </div>

@@ -24,7 +24,7 @@
 
 .formulario{
     background: var(--lightGrey);
-    width: 80%;
+    width: 95%;
     margin: 20px;
     
 }
@@ -39,6 +39,9 @@
 .container {
     display:grid;
     padding: 10px;
+}
+.container button {
+   margin-left: 90%;
 }
 
 .metas{
@@ -70,16 +73,23 @@
     text-align: center;
     font-size: large;
     appearance: text;
-    content: 'YYYY-MM';
+   
 }
 
 .tittle{
     display: flex;
-    justify-content: space-between;
+}
+
+.form-select{
+    display:flex;
+    margin-left: 20px;
+    font-size: large;
+}
+.form-select select{
+    margin-left: 10px;
 }
 
 .label {
     font-family: CronosBold;
     color: var(--midBlue);
-    margin-left: 20px;
 }
