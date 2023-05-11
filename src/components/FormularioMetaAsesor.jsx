@@ -100,12 +100,10 @@ const FormMetaAsesor = () => {
         }}
       >
         <Form className="formulario">
+            <label className="label-fecha">Periodo: {periodos}</label>
+            <Field className="input-fecha" type="text" name="periodo" disabled/>
             <div className="tittle">
                 <h1>Antiguedad : {antiguedad || "---"}</h1>
-                    <div className="form-Group">
-                    <label className="label">Periodo:</label>
-                    <Field className="input-fecha" type="text" name="periodo" disabled/>
-                </div>
             </div>
             
           <div className="container">

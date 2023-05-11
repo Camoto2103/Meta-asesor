@@ -24,8 +24,10 @@
 
 .formulario{
     background: var(--lightGrey);
-    width: 95%;
+    
     margin: 20px;
+    box-shadow: 5px 3px 3px #0004;
+    border-radius: 5px;
     
 }
 
@@ -34,15 +36,15 @@
     font-family: CronosBold;
     color: var(--textBlue);
     
+    
    
 }
 .container {
     display:grid;
     padding: 10px;
+    
 }
-.container button {
-   margin-left: 90%;
-}
+
 
 .metas{
     display: flex;
@@ -65,7 +67,7 @@
 }
 
 .input-fecha {
-    margin-right: 40px;
+    margin-left: 10px;
     width: 100px;
     height: 25px;
     border-radius: 5px;
@@ -73,7 +75,14 @@
     text-align: center;
     font-size: large;
     appearance: text;
+    display:none;
    
+}
+.label-fecha{
+    font-size: larger;
+    color: var(--midBlue);
+    font-family: CronosBold;
+    
 }
 
 .tittle{

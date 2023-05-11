@@ -1,0 +1,134 @@
+
+:root {
+    --midBlue: #002b8c;
+    --darkgrey: #7d7d7d;
+    --textBlue: #001950;
+    --white: #fff;
+    --lightGrey: #f7f7f7;
+    --lightBlue: #00c8fa;
+}
+
+@font-face {
+    font-family: CronosBold;
+    src: url(../fonts/CRONOS/CronosPro-Bold.otf);
+}
+
+@font-face {
+    font-family: CronosRegular;
+    src: url(../fonts/CRONOS/CronosPro-Regular.otf);
+}
+
+body{
+    background-color: var(--lightGrey);
+    color: var(--textBlue);
+    font-family: CronosRegular;
+}
+
+.container-table{
+    padding: 20px;
+}
+
+.titel-table{
+    background-color: var(--lightBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: var(--white);
+    border-radius: 10px 10px 0 0;
+    box-shadow:  5px 3px 3px #0004;
+    font-family: CronosBold;
+}
+
+.data-table{
+    background-color: var(--white);
+    display: flex;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 5px 3px 3px #0004;
+    overflow: auto;
+}
+
+
+.data-table_grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: var(--white);
+    align-items: center;
+    justify-items: center;
+}
+
+.data-table_grid div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 55px;
+    padding-left: 3px;
+}
+
+.text-button{
+    background-color: #00c8fa;
+}
+
+
+.light-gray{
+    background-color: #eaeaea;
+}
+
+.grid-column{
+    font-family: CronosRegular;
+    font-size: 25px;
+}
+
+.grid-row{
+    font-family: CronosRegular;
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+
+}
+
+.bold-font{
+    font-size: 30px;
+    font-family: CronosBold;
+    
+}
+
+.line-button{
+    border-bottom: solid #dadada 0.5px;
+}
+
+
+@media (max-width: 767px) {
+
+    .titel-table{
+        font-size: 25px;
+    }
+    
+    .grid-column{
+        font-size: 18px;
+    }
+
+    .grid-row{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 540px) {
+
+    .titel-table{
+        font-size: 20px;
+    }
+    
+    .grid-column{
+        font-size: 16px;
+    }
+
+    .grid-row{
+        font-size: 16px;
+    }
+}
