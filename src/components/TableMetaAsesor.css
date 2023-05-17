@@ -26,6 +26,7 @@ body{
 
 .container-table{
     padding: 20px;
+    
 }
 
 .titel-table{
@@ -33,7 +34,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 20px;
     color: var(--white);
     border-radius: 10px 10px 0 0;
     box-shadow:  5px 3px 3px #0004;
@@ -45,7 +46,6 @@ body{
     display: flex;
     border-radius: 0px 0px 10px 10px;
     box-shadow: 5px 3px 3px #0004;
-    overflow: auto;
 }
 
 
@@ -56,6 +56,7 @@ body{
     background-color: var(--white);
     align-items: center;
     justify-items: center;
+    
 }
 
 .data-table_grid div{
@@ -101,34 +102,43 @@ body{
 .line-button{
     border-bottom: solid #dadada 0.5px;
 }
-
-
-@media (max-width: 767px) {
-
-    .titel-table{
-        font-size: 25px;
-    }
-    
-    .grid-column{
-        font-size: 18px;
-    }
-
-    .grid-row{
-        font-size: 18px;
-    }
+.misTables{
+    display: flex;
+    justify-content: center;
 }
 
-@media (max-width: 540px) {
+
+@media (max-width: 1170px) {
 
     .titel-table{
         font-size: 20px;
     }
     
     .grid-column{
+        font-size: 18px;
+    }
+
+    .grid-row{
+        font-size: 18px;
+    }
+    
+}
+
+@media (max-width: 870px) {
+
+    /* .titel-table{
+        font-size: 20px;
+    } */
+    
+    .grid-column{
         font-size: 16px;
     }
 
     .grid-row{
         font-size: 16px;
+    }
+    .misTables{
+        flex-wrap: wrap;
+        
     }
 }

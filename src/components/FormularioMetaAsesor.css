@@ -23,10 +23,9 @@
 }
 
 .formulario{
-    background: var(--lightGrey);
-    
+    background-color: var(--lightGrey);
     margin: 20px;
-    box-shadow: 5px 3px 3px #0004;
+    box-shadow: 5px 3px 3px 2px #0004;
     border-radius: 5px;
     
 }
@@ -102,3 +101,8 @@
     font-family: CronosBold;
     color: var(--midBlue);
 }
+
+.metas-tittle{
+    margin-left: 20%;
+}
+
