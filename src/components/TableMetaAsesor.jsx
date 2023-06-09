@@ -9,21 +9,28 @@ const TableMetaAsesor = () => {
     axios
       .get(`https://api.amstigo.com.co/mto/mestasAsesor/index.php`)
       .then(function (res) {
-        setDataTable(res.data);
+        if(res.data){
+          setDataTable(res.data);
+          console.log(res);
+        }else{
+          setDataTable(null);
+        }
       });
+
+      
   }, []);
 
   return (
-    <>
+    
       <div className="misTables">
-      {dataTable.map((x) => (
+      {dataTable && dataTable.map((x) => (
         <div key={x.id} className="container-table">
           <div className="titel-table">Metas Asesor</div>
 
           <div className="data-table">
             <div className="data-table_grid">
               <div className="grid-column light-gray line-button">
-                Antiguedad
+               
               </div>
               <div className="grid-column light-gray line-button">KPI</div>
               <div className="grid-column line-button">Acum. Mes</div>
@@ -32,9 +39,7 @@ const TableMetaAsesor = () => {
               <div className="grid-column line-button">S3</div>
               <div className="grid-column line-button">S4</div>
               <div className="grid-column line-button">S5</div>
-              <div className="grid-row light-gray bold-font text-button">
-                {x.Antiguedad}{" "}
-              </div>
+              <div className="grid-row light-gray bold-font text-button">{x.Antiguedad}{" "}</div>
               <div className="grid-row light-gray">Bitacoras</div>
               <div className="grid-row">{x.Meta_Bitacoras}</div>
               <div className="number-data">{x.Meta_Bitacoras_s1}</div>
@@ -57,7 +62,7 @@ const TableMetaAsesor = () => {
       ))}
 
       </div>
-    </>
+  
   );
 };
 

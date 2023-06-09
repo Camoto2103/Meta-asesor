@@ -32,7 +32,7 @@ const FormMetaAsesor = ({setrefreshTable}) => {
       showConfirmButton: false,
       confirmButtonText: "",
       confirmButtonColor: "",
-      timer: 3500,
+      timer: 2000,
     });
   };
 
