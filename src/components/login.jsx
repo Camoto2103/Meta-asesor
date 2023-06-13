@@ -29,7 +29,7 @@ const Login = ({setUserValidator}) => {
             const errors = {};
 
             if (!values.cedula) {
-              errors.cedula = "Cedula es requerida";
+              errors.cedula = "Usuario es requerido";
             }
 
             return errors;
@@ -66,7 +66,7 @@ const Login = ({setUserValidator}) => {
           <Form className="form">
             <div className="form-Group-Login">
               <h1>Ingresa a Metas Asesor</h1>
-              <label className="label">Cedula:</label>
+              <label className="label">Usuario:</label>
               <Field className="Input-login" type="number" name="cedula" />
               <ErrorMessage name="cedula" />
             </div>
