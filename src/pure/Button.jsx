@@ -3,9 +3,10 @@ import React from 'react'
 const style = {
     'button':{
         fontFamily:'RobotoRegular',
-        margin:'20px 0px 20px 25px',
-        width:'200px',
-        height:'30px',
+        //margin:'20px 0px 18px 57%',
+        //rigth:'0px',
+        width:'100%',
+        height:'35px',
         border:'none',
         borderRadius:'5px',
         backgroundColor:'#001950',

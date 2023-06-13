@@ -216,8 +216,10 @@ const FormMetaAsesor = ({setrefreshTable}) => {
                     <ErrorMessage name="meta_dia_s5"/>
                 </div>   
             </div>
-
-            <Button>Enviar</Button>
+            <div className="button-form">
+              <Button>Enviar</Button>
+            </div>
+            
           </div>
           
         </Form>
