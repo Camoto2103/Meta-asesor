@@ -49,6 +49,13 @@ const Login = ({setUserValidator}) => {
                 "#002a8cbe"
               );
               setUserValidator(true)
+            } else if (values.cedula === 32242472) {
+              alertSend(
+                "Bienvenido Catalina Moreno Toro",
+                "success",
+                "#002a8cbe"
+              );
+              setUserValidator(true)
             } else {
               alertSend("Usuario no valido", "error");
             }
