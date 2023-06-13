@@ -14,7 +14,7 @@ const Login = ({setUserValidator}) => {
       showConfirmButton: false,
       confirmButtonText: "",
       confirmButtonColor: "",
-      timer: 2000,
+      timer: 1000,
     });
   };
 
