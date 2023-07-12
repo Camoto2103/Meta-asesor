@@ -169,8 +169,17 @@ const FormMetaAsesor = ({setrefreshTable}) => {
               if(res.data===1){
                 alertSend('Se actualizaron las metas del asesor con éxito', 'success','#002a8cbe' )
                 setSumaBit('')
+                setMetaBit1('')
+                setMetaBit2('')
+                setMetaBit3('')
+                setMetaBit4('')
+                setMetaBit5('')
                 setSumaDias('')
-                
+                setMetaDias1('')
+                setMetaDias2('')
+                setMetaDias3('')
+                setMetaDias4('')
+                setMetaDias5('')
               }else{
                 alertSend('Ocurrio un error, vuelve a intentarlo', 'error')
               }
@@ -196,9 +205,6 @@ const FormMetaAsesor = ({setrefreshTable}) => {
           <h2 className="metas-tittle">Metas Mes Bitacora: {sumaBit}</h2>
             <div className="metas">
                 <div className="form-Group">
-                    {/* <label className="label">meta_bit:</label>
-                    <Field className="input" type="number" name="meta_bit" />
-                    <ErrorMessage name="meta_bit"/> */}
                 </div>
                 <div className="form-Group">
                     <label className="label">meta_bit_s1:</label>
@@ -230,10 +236,6 @@ const FormMetaAsesor = ({setrefreshTable}) => {
             <h2 className="metas-tittle">Metas Mes Dias : {sumaDias}</h2>
             <div className="metas">
                 <div className="form-Group">
-                    {/* <label className="label">meta_dia:</label>
-                    <Field className="input" type="number" name="meta_dia" hide />
-                    <ErrorMessage name="meta_dia"/> */}
-
                 </div>
                 <div className="form-Group">
                     <label className="label">meta_dia_s1:</label>
